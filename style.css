@@ -10,7 +10,7 @@ header h1 {
 display: inline;
 color: #F5E8C7;
 outline: 10px black;
-margin-right: 10%;
+margin-right: 30%;
 }
 
 nav {
@@ -27,7 +27,12 @@ float: center;
 
 nav li {
 display: inline;
-margin: 0px 10px;
+margin: 0px 1vw;
+}
+
+nav li:last-child {
+    float: right;
+    margin-top: 10px;
 }
 
 nav a {
@@ -36,4 +41,55 @@ color: #F5E8C7;
 text-align: center;
 width: 130px;
 padding: 10px;
+}
+
+ul li a:hover{
+    background-color: #363062;
+    border: 2px solid #F5E8C7;
+    border-radius: 15px;
+}
+
+/* Main content here */
+
+#wrapper_div {
+    margin-top: 10vh;
+
+}
+
+#create_div {
+    text-align: center;
+    display: inline;
+    float: inline-start;
+    margin-left: 15vw;
+    width: 15vw;
+    padding: 10px 5%;
+    margin-right: 30vw;
+    background: #363062;
+    border-radius: 50px;
+}
+
+div#create_div form {
+    display: inline;
+}
+
+div#create_div label {
+display: block;
+color: #F5E8C7;
+margin-top: 15px;
+}
+
+#input_div {
+    display: block;
+    padding-top: 3px;
+    margin-bottom: 50px;
+
+
+}
+
+div#input_div form {
+    display: inline;
+}
+
+div#input_div label {
+display: block;
 }
