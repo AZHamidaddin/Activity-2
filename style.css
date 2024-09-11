@@ -1,0 +1,39 @@
+/* use https://colorhunt.co/palette/363062435585818fb4f5e8c7 for the colors */
+
+header {
+background: #435585;
+padding: 20px;
+margin: -8px;
+}
+
+header h1 {
+display: inline;
+color: #F5E8C7;
+outline: 10px black;
+margin-right: 10%;
+}
+
+nav {
+display: inline;
+margin: auto;
+text-align: center;
+}
+
+nav ul {
+display: inline;
+padding: 10px;
+float: center;
+}
+
+nav li {
+display: inline;
+margin: 0px 10px;
+}
+
+nav a {
+text-decoration: none;
+color: #F5E8C7;
+text-align: center;
+width: 130px;
+padding: 10px;
+}
