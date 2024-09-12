@@ -28,10 +28,10 @@
             <h2 id="create">Create Event</h2>
 
             <form>
-                <label for="event_name">Event Name:</label>
+                <label for="event_name">Event Name</label>
                 <input type="text" name="Event Name" id="event_name">
 
-                <label for="event_description">Event Description:</label>
+                <label for="event_description">Event Description</label>
                 <textarea name="Event Description" id="event_description"></textarea>
 
                 <label for="start_date">Start Date</label>
@@ -40,7 +40,7 @@
                 <label for="end_date">End Date</label>
                 <input type="date" name="End Date" id="end_date">
 
-                <label for="time_increment">Time Increment:</label>
+                <label for="time_increment">Time Increment</label>
                 <select name="Time Increment" id="time_increment">
                     <option value="15">15 Minutes</option>
                     <option value="30">30 Minutes</option>
@@ -80,51 +80,84 @@
                     </tr>
                 </table>
 
-                <input type="submit" value="Submit Availabilty">
+                <input type="submit" value="Submit Availabilty" id="submit_availability">
 
             </form>
 
         </div>
 
-        <h2 id="view_results">View Results</h2>
+        <div id="results_div">
 
-        <table>
-            <thead>
-                <th>Time</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </thead>
+            <h2 id="view_results">View Results</h2>
 
-            <tr>
-                <td>9:00 AM</td>
-                <td>3 available</td>
-                <td>2 available</td>
-                <td>4 available</td>
-                <td>1 available</td>
-                <td>5 available</td>
-            </tr>
-        </table>
+            <table>
+                <thead>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </thead>
 
-        <p>Shareable Link: <a href="https://when2meet.com/event?id=123456">https://when2meet.com/event?id=123456</a></p>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>3 available</td>
+                    <td>2 available</td>
+                    <td>4 available</td>
+                    <td>1 available</td>
+                    <td>5 available</td>
+                </tr>
+            </table>
+
+            <p>Shareable Link: <a href="https://when2meet.com/event?id=123456"
+                    target="_blank">https://when2meet.com/event?id=123456</a></p>
+
+        </div>
 
     </div>
 
-    <h2 id="sign_up">Sign Up</h2>
-    <form>
-        <label for="username">Username:</label>
-        <input type="text" name="Username" id="username">
+    <div id="sign_up_div">
 
-        <label for="email">Email:</label>
-        <input type="email" name="Email" id="email">
+        <h2 id="sign_up">Sign Up</h2>
+        <form>
 
-        <label for="password">Password:</label>
-        <input type="password" name="Password" id="password">
+            <table>
 
-        <input type="submit" value="Sign Up">
-    </form>
+                <tr>
+                    <td>
+                        <label for="username">Username:</label>
+                        <input type="text" name="Username" id="username">
+                    </td>
+
+                    <td rowspan="1" id="pass">
+                        <label for="password">Password:</label>
+                        <input type="password" name="Password" id="password">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="Email" id="email">
+
+                    </td>
+
+                    <td>
+                        <a href="https://www.avast.com/random-password-generator" target="_blank" id="password_generator">Need help creating a password?</a>
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <input type="submit" value="Sign Up" id="sign_up_button">
+
+        </form>
+
+    </div>
 
     <footer>
         <p>&copy; 2024 WhenToMeet. All rights reserved</p>
